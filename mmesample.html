@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border-radius: 4px;
+        }
+
+        body {
+            background-color: #d7ece7;
+            font-family: 'Orelega One', cursive;
+        }
+
+        #header ul li {
+            padding: 10px;
+            color: #76323f;
+        }
+
+        #headerbutton {
+            display: flex;
+         position: absolute;
+         right: 10px;
+            list-style: none;
+        }
+
+        #login {
+            background-color: #05564a;
+            color: #d7ece7;
+            width: 150px;
+            height: 30px;
+        }
+
+        #cart {
+            background-color: #05564a;
+            color: #d7ece7;
+            width: 60px;
+            height: 30px;
+        }
+
+        .head {
+            background-color: #d7ece7;
+            display: flex;
+            list-style: none;
+            margin: 5px;
+            
+        }
+
+        #head1 {
+            justify-content: right;
+        }
+
+        #head2 {
+            display: flex;
+        }
+
+        #head2 ul li {
+            padding-top: 3px;
+        }
+
+        #head2 img {
+            width: 100px;
+            height: 50px;
+        }
+
+        #welcome {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #c4fdcc;
+            margin: 5px;
+            height: 70vh;
+        }
+
+        #wel1 {
+            margin-top: 5%;
+        }
+
+        .welcontent {
+            margin: 7px;
+            color: #248f4f;
+            font-size: 20px;
+        }
+
+        #h1 {
+            color: #05564a;
+            font-size: 3rem;
+            font-family: 'Orelega One', cursive;
+        }
+
+        
+
+        .welboxes h1 {
+            color: #05564a;
+        }
+
+        #boxes {
+            display: flex;
+            justify-content: space-around;
+        }
+         
+        .welboxes {
+            width: 250px;
+            height: 250px;
+            margin: 100px;
+            padding: 10px;
+            /* border: 2px solid #fc4a1a; */
+            color: #248f4f;
+            background-color: #dafff6;
+            text-align: center;
+        }
+
+        @media (orientation=portrait) {
+            /* body {
+                background-color: aqua;
+
+            } */
+            body {display: flex;
+                justify-content: center;
+            }
+            .head {
+                flex-direction: column;
+            }
+            
+            #boxes {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <ul id="head1" class="head">
+            <li>For Tutors</li>
+            <li>For Schools</li>
+            <li>Learning Portal</li>
+            <li>My Account</li>
+        </ul>
+        <ul id="head2" class="head">
+            <img src="https://mmerevise.co.uk/wp-content/uploads/2022/12/desktop-logo-xmas.png" alt="">
+            <li>Revise</li>
+            <li>Shop</li>
+            <li>Tution</li>
+            <li>GCSE Exams</li>
+            <li>GCSE Equivalency</li>
+            <li> Functional Skills </li>
+
+            <ul id="headerbutton">
+
+                <li>
+                    <button type="button" id="login">
+                        Login/Register
+                    </button>
+                </li>
+                <li>
+                    <button id="cart">Cart</button>
+                </li>
+
+            </ul>
+
+        </ul>
+    </header>
+
+    <div id="welcome">
+        <div class="welcontent" id="wel1">
+            Welcome To MME
+        </div>
+        <h1 id="h1">
+            Online Courses & Exams
+        </h1>
+        <div class="welcontent" id="wel2">
+            The very best courses and academic support for Maths,English and Science
+        </div>
+        <div class="welcontent" id="wel3">
+            star rating
+        </div>
+        <div class="welcontent" id="wel4">
+            Average rating : 5 out if 5 from 1693 Reviews
+        </div>
+
+        <div id="boxes">
+            <div class="welboxes" id="box1">
+                <h1>Functional Skills </h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti ipsum sunt odit, tenetur eaque,
+                    laboriosam cum eos incidunt praesentium, dolorum atque tempore voluptate! Et dolore excepturi illum?
+                </p>
+            </div>
+            <div class="welboxes" id="box2">
+                <h1>MME Shop</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+                    necessitatibus officiis quo animi voluptatum aperiam dolore rem ea id ullam.</p>
+            </div>
+            <div class="welboxes" id="box3">
+                <h1>Book An Exam</h1>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia minus,
+                    corporis nihil error laudantium fugiat nostrum aspernatur consequuntur </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
